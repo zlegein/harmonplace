@@ -1,10 +1,4 @@
-/*
- * Theme Name: Harp
- * Author: Joseph W.
- * Author URI: https://digbootstrap.com
- * Version: 1.0
- *
- */
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500italic,500|Roboto+Slab);
 
 h1, h2, h3, h4, h5, h6 {
@@ -50,42 +44,8 @@ body, p {
     color: #fff
 }
 
-.navbar-btn-harp {
-    background-color: transparent;
-    box-shadow: none;
-    border: 1px solid rgba(0, 0, 0, .1);
-    color: rgba(0, 0, 0, .3);
-    text-transform: uppercase
-}
-
-.navbar-btn-harp:active, .navbar-btn-harp:hover {
-    box-shadow: none;
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff
-}
-
 .jumbotron, .navbar {
     background: #31b4e7
-}
-
-.navbar {
-    border-width: 0;
-    margin-bottom: 0;
-    padding-top: 67px;
-    padding-bottom: 15px
-}
-
-.navbar-logo {
-    width: 116px;
-    height: 38px;
-    margin-top: 6px;
-    background: url(../img/logo.png) no-repeat;
-    background-size: 100%
-}
-
-.navbar a:focus, .navbar a:hover {
-    text-decoration: none
 }
 
 .jumbotron {
@@ -119,16 +79,6 @@ body, p {
 .jumbotron .btn {
     border: 2px solid #fff;
     padding: 12px 42px
-}
-
-.invite-me-cta {
-    padding-left: 10px
-}
-
-.invite-me-cta a {
-    color: #fff;
-    font-weight: 500;
-    padding-left: 10px
 }
 
 #about {
@@ -185,65 +135,6 @@ body, p {
     margin-bottom: 50px
 }
 
-.quote {
-    color: #fff;
-    background: #88bf62;
-    padding: 18px 20px 0 15px;
-    border-radius: 5px;
-    margin-bottom: 30px
-}
-
-.quote:after {
-    content: '';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 20px 18px 0;
-    border-color: #88bf62 transparent transparent;
-    position: relative;
-    top: 37px;
-    left: 20px
-}
-
-.quote p {
-    color: #fff;
-    margin-bottom: 0
-}
-
-.cite {
-    margin-left: 25px;
-    margin-bottom: 80px
-}
-
-.cite .photo {
-    background-color: #fff;
-    border-radius: 100px;
-    width: 60px;
-    height: 60px;
-    float: left;
-    margin-right: 10px
-}
-
-.cite p {
-    position: relative;
-    top: 10px
-}
-
-.cite p:nth-child(2), .cite p:nth-child(3) {
-    color: rgba(0, 0, 0, .3)
-}
-
-.cite p:nth-child(2) {
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Roboto Slab', serif;
-    margin-bottom: 0
-}
-
-#invite-me {
-    padding-top: 148px
-}
-
 .panel-signup {
     background-color: #f5f5f5;
     border-width: 0;
@@ -252,7 +143,6 @@ body, p {
     margin-top: 33px;
     margin-bottom: 0;
     padding: 52px;
-    max-width: 620px
 }
 
 .panel-signup .panel-body {
@@ -291,7 +181,7 @@ body, p {
 }
 
 .panel-signup .btn[type=submit] {
-    height: 46px
+    height: 34px
 }
 
 .panel-signup .btn-harp:active, .panel-signup .btn-harp:hover {
@@ -395,32 +285,6 @@ body, p {
         padding-bottom: 10px
     }
 
-    .quote:after {
-        border-width: 10px 9px 0;
-        top: 30px
-    }
-
-    .cite .photo {
-        width: 40px;
-        height: 40px
-    }
-
-    .cite p {
-        top: 0
-    }
-
-    .cite p:nth-child(2) {
-        font-weight: 400
-    }
-
-    .cite p:nth-child(2), .cite p:nth-child(3) {
-        font-size: 14px
-    }
-
-    #invite-me {
-        padding-top: 80px
-    }
-
     .panel-signup {
         margin-top: 33px;
         padding: 22px
@@ -436,11 +300,6 @@ body, p {
 }
 
 @media (max-width:480px) {
-    .navbar {
-        padding-top: 15px;
-        padding-bottom: 15px
-    }
-
     .jumbotron {
         padding: 5px 0 50px
     }
@@ -477,32 +336,6 @@ body, p {
     .testimonial-wrap {
         padding-top: 50px;
         padding-bottom: 10px
-    }
-
-    .quote:after {
-        border-width: 10px 9px 0;
-        top: 30px
-    }
-
-    .cite .photo {
-        width: 40px;
-        height: 40px
-    }
-
-    .cite p {
-        top: 0
-    }
-
-    .cite p:nth-child(2) {
-        font-weight: 400
-    }
-
-    .cite p:nth-child(2), .cite p:nth-child(3) {
-        font-size: 14px
-    }
-
-    #invite-me {
-        padding-top: 80px
     }
 
     .panel-signup {
