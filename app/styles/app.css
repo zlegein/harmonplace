@@ -129,14 +129,19 @@ body, p {
 }
 
 .testimonial-wrap {
-    padding-top: 142px;
-    padding-bottom: 88px;
+    margin-bottom: 25px;
     background-color: #98d56e
 }
 
 .testimonial-wrap .headline {
     color: #fff;
-    margin-bottom: 50px
+    margin-bottom: 25px
+}
+
+.testimonial-wrap h4 {
+    color:#fff;
+    font-size: 16px;
+    margin-bottom: 25px
 }
 
 .panel-signup {
