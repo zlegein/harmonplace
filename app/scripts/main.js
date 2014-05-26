@@ -23,8 +23,8 @@ jQuery(function( $ ){
 
         // $(".testimonial-wrap").css("backgroundPosition", "center " + (scrolltop/4) + "px");
 
-        $(".jumbotron-content").css("opacity", 1 - (scrolltop/500));
-        $(".jumbotron-content h1").css("top", 1 - (scrolltop/10) + "px");
+//        $(".jumbotron-content").css("opacity", 1 - (scrolltop/500));
+//        $(".jumbotron-content h1").css("top", 1 - (scrolltop/10) + "px");
 
         if( scrollwindow > ( $(".features").offset().top + 200 ) ) {
 
