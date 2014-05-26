@@ -44,17 +44,21 @@ body, p {
     color: #fff
 }
 
-.jumbotron, .navbar {
-    background: #31b4e7
-}
 
 .jumbotron {
+    background: #31b4e7;
     margin-bottom: 0;
-    padding: 55px 0 155px
+    padding: 55px 0 155px;
+    height:500px;
 }
 
 .headline, .jumbotron-content, .lead-harp {
     max-width: 880px
+}
+
+.jumbotron .headline {
+    color: inherit;
+    font-size: 26px;
 }
 
 .jumbotron h1 {
