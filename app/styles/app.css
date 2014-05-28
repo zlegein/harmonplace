@@ -87,8 +87,8 @@ body, p {
 
 #about {
     background-color: #fff;
-    padding-top: 152px;
-    padding-bottom: 152px
+    padding-top: 50px;
+    padding-bottom: 50px
 }
 
 .features {
@@ -129,6 +129,7 @@ body, p {
 }
 
 .testimonial-wrap {
+    padding: 25px;
     margin-bottom: 25px;
     background-color: #98d56e
 }
@@ -151,7 +152,7 @@ body, p {
     box-shadow: 0 1px 0 rgba(0, 0, 0, .15);
     margin-top: 33px;
     margin-bottom: 0;
-    padding: 52px;
+    padding: 25px;
 }
 
 .panel-signup .panel-body {
