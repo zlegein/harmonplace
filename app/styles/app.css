@@ -1,15 +1,45 @@
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500italic,500|Roboto+Slab);
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500italic,500|Roboto+Slab);*/
 
-h1, h2, h3, h4, h5, h6 {
+@font-face {
+    font-family: 'NewCenturySchlbk LT';
+    src: url('../fonts/2B12E1_1_0.eot');
+    src: url('../fonts/2B12E1_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2B12E1_1_0.woff') format('woff'), url('../fonts/2B12E1_1_0.ttf') format('truetype'), url('../fonts/2B12E1_1_0.svg#wf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Found';
+    src: url('../fonts/2B12E1_0_0.eot');
+    src: url('../fonts/2B12E1_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2B12E1_0_0.woff') format('woff'), url('../fonts/2B12E1_0_0.ttf') format('truetype'), url('../fonts/2B12E1_0_0.svg#wf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
     color: #363634;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Found', serif;
     line-height: 1.4
+
+}
+h2, h3, h4, h5, h6 {
+    color: #363634;
+    font-family: 'Helvetica', 'Arial', serif;
+    /*line-height: 1.4*/
 }
 
-body, p {
-    color: #8a8a8a;
-    font-family: Roboto, sans-serif
+h4 {
+    font-size: 25px;
+}
+
+.section1 h4 {
+    color: #fff;
+    margin-bottom:25px;
+}
+
+p {
+    color: #fff;
+    font-family: 'Found', serif;
+    font-size:10px;
 }
 
 .btn, a {
@@ -22,10 +52,14 @@ body, p {
 }
 
 .lead {
-    font-weight: 300
+    font-family: 'NewCenturySchlbk LT', serif;
+    /*font-size: 2.0em;*/
+    color: #fff;
 }
 
 .headline {
+    font-family: 'Found', serif;
+    font-size: 3.0em;
     margin-top: 0;
     margin-bottom: 30px
 }
@@ -44,24 +78,13 @@ body, p {
     color: #fff
 }
 
-
-.jumbotron {
-    background: #31b4e7;
+.section1 {
+    background: #87754E;
     margin-bottom: 0;
     padding: 55px 0 155px;
-    height:500px;
 }
 
-.headline, .jumbotron-content, .lead-harp {
-    max-width: 880px
-}
-
-.jumbotron .headline {
-    color: inherit;
-    font-size: 26px;
-}
-
-.jumbotron h1 {
+.section1 h1 {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: .05em;
@@ -69,26 +92,22 @@ body, p {
     margin-bottom: 30px
 }
 
-.jumbotron .lead {
-    color: rgba(255, 255, 255, .8);
-    font-size: 26px;
-    margin-bottom: 50px
-}
-
-.jumbotron p {
-    color: #fff;
-    font-size: 16px
-}
-
-.jumbotron .btn {
+.section1 .btn {
     border: 2px solid #fff;
     padding: 12px 42px
 }
 
-#about {
-    background-color: #fff;
-    padding-top: 50px;
-    padding-bottom: 50px
+.section2, .section3 {
+     padding-top: 50px;
+     padding-bottom: 50px
+}
+
+.section2 {
+    background: #382E2B;
+}
+
+.section2 h2 {
+    color: #87754E;
 }
 
 .features {
@@ -105,6 +124,10 @@ body, p {
 
 .feature {
     margin-top: 30px
+}
+.feature h4 {
+    color: #87754E;
+    font-weight:bold;
 }
 
 .feature .fa {
@@ -128,21 +151,47 @@ body, p {
     color: #B462BF
 }
 
-.testimonial-wrap {
-    padding: 25px;
-    margin-bottom: 25px;
-    background-color: #98d56e
+.section3 {
+    background: #555759
 }
 
-.testimonial-wrap .headline {
+.section3 .headline {
     color: #fff;
     margin-bottom: 25px
 }
 
-.testimonial-wrap h4 {
+.section3 h4 {
     color:#fff;
-    font-size: 16px;
     margin-bottom: 25px
+}
+
+.section4 h2 {
+    color:#fff;
+}
+
+.section4 .column1 {
+    background:#008065;
+    height:460px;
+}
+
+.section4 .column2 {
+    background:#006568;
+    height:460px;
+}
+
+.section4 .column3 {
+    background:#ff1493;
+    height:460px;
+}
+
+.section4 .container {
+    padding: 0;
+    margin: 0;
+}
+
+.section4 .headline {
+    padding-top:25px;
+    font-size:2.5em;
 }
 
 .panel-signup {
@@ -242,57 +291,45 @@ body, p {
     margin: -.05em 0 .95em 0
 }
 
-@media (min-width:768px) {
-    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-        margin-left: 0
-    }
-}
-
-@media (min-width:768px) and (max-width:768px) {
-    .panel-signup .form-group {
-        width: 33.3333%
-    }
-}
-
 @media (max-width:768px) {
     .navbar-right {
         float: right !important
     }
 
-    .jumbotron {
+    .section1 {
         padding: 5px 0 80px
     }
 
-    .jumbotron h1 {
+    .section1 h1 {
         font-size: 32px;
         margin-bottom: 30px
     }
 
-    .jumbotron .lead {
-        font-size: 21px
+    h4 {
+        font-size:20px;
     }
 
-    .jumbotron p {
-        font-size: 14px
-    }
-
-    .jumbotron .btn {
+    .section1 .btn {
         padding: 9px 21px;
         font-size: 14px
     }
 
-    .headline {
-        font-size: 21px
-    }
-
-    #about {
+    .section2 {
         padding-top: 80px;
         padding-bottom: 80px
     }
 
-    .testimonial-wrap {
+    .section3 {
         padding-top: 80px;
-        padding-bottom: 10px
+        padding-bottom: 20px
+    }
+
+    .section4 .headline {
+        font-size:2.0em;
+    }
+
+    .column1, .column2, .column3 {
+        height:200px;
     }
 
     .panel-signup {
@@ -309,32 +346,39 @@ body, p {
     }
 }
 
-@media (max-width:480px) {
-    .jumbotron {
+@media (max-width: 468px) {
+    .section1 {
         padding: 5px 0 50px
     }
 
-    .jumbotron h1 {
+    .section1 h1 {
         font-size: 28px;
         margin-bottom: 25px
     }
 
-    .jumbotron .lead {
-        font-size: 17px;
-        margin-bottom: 30px
+    h4 {
+        font-size:15px;
     }
 
-    .jumbotron .btn {
+    .headline {
+        font-size: 2.0em;
+        margin-bottom: 15px
+    }
+
+    .lead {
+        font-size: 1.2em;
+    }
+
+    .section1 .btn {
         padding: 9px;
         font-size: 14px
     }
 
-    .headline {
-        font-size: 21px;
-        margin-bottom: 15px
+    .section2 h2 {
+        font-size: 28px;
     }
 
-    #about {
+    .section2 {
         padding-top: 50px;
         padding-bottom: 50px
     }
@@ -343,9 +387,21 @@ body, p {
         margin-top: 0
     }
 
-    .testimonial-wrap {
+    .section3 {
         padding-top: 50px;
-        padding-bottom: 10px
+        padding-bottom: 40px
+    }
+
+    .section4 .headline {
+        font-size:1.5em;
+    }
+
+    .section4 .lead {
+        font-size:1.0em;
+    }
+
+    .column1, .column2, .column3 {
+        height:200px;
     }
 
     .panel-signup {
