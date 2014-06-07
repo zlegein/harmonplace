@@ -38,8 +38,7 @@ h4 {
 
 p {
     color: #fff;
-    font-family: 'Found', serif;
-    font-size:10px;
+    font-family: 'helvetica neue light', serif;
 }
 
 .btn, a {
@@ -53,8 +52,6 @@ p {
 
 .lead {
     font-family: 'NewCenturySchlbk LT', serif;
-    /*font-size: 2.0em;*/
-    color: #fff;
 }
 
 .headline {
@@ -169,19 +166,16 @@ p {
     color:#fff;
 }
 
-.section4 .column1 {
+.section4 .column-1 {
     background:#008065;
-    height:460px;
 }
 
-.section4 .column2 {
+.section4 .column-2 {
     background:#006568;
-    height:460px;
 }
 
-.section4 .column3 {
+.section4 .column-3 {
     background:#ff1493;
-    height:460px;
 }
 
 .section4 .container {
@@ -192,6 +186,10 @@ p {
 .section4 .headline {
     padding-top:25px;
     font-size:2.5em;
+}
+
+.section4 h4 {
+    color: #fff;
 }
 
 .panel-signup {
@@ -291,6 +289,20 @@ p {
     margin: -.05em 0 .95em 0
 }
 
+.column {
+    padding-bottom:75px;
+}
+
+@media (min-width: 768px) {
+    .column {
+        height:500px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
+}
+
 @media (max-width:768px) {
     .navbar-right {
         float: right !important
@@ -326,10 +338,6 @@ p {
 
     .section4 .headline {
         font-size:2.0em;
-    }
-
-    .column1, .column2, .column3 {
-        height:200px;
     }
 
     .panel-signup {
@@ -398,10 +406,6 @@ p {
 
     .section4 .lead {
         font-size:1.0em;
-    }
-
-    .column1, .column2, .column3 {
-        height:200px;
     }
 
     .panel-signup {
