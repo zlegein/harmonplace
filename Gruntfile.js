@@ -208,7 +208,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= config.app %>/images',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= config.dist %>/images'
+                    dest: '<%= config.dist %>/images/'
                 }]
             }
         },
@@ -300,19 +300,28 @@ module.exports = function (grunt) {
                 cwd: '<%= config.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
+            },
+            fonts: {
+                expand: true,
+                dot: true,
+                cwd: 'bower_components/font-awesome/fonts',
+                dest: '<%= config.app %>/fonts/',
+                src: '{,*/}*.{otf,eot,svg,ttf,woff}'
             }
         },
 
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
-                'copy:styles'
+                'copy:styles',
+                'copy:fonts'
             ],
             test: [
                 'copy:styles'
             ],
             dist: [
                 'copy:styles',
+                'copy:fonts',
                 'imagemin',
                 'svgmin'
             ]
@@ -369,8 +378,8 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('default', [
-        'newer:jshint',
-        'test',
+//        'newer:jshint',
+//        'test',
         'build'
     ]);
 
