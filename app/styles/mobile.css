@@ -1,0 +1,149 @@
+/* Fancy Fonts
+------------------------------------*/
+@font-face {
+    font-family: 'Found';
+    src: url('../fonts/2B12E1_0_0.eot');
+    src: url('../fonts/2B12E1_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2B12E1_0_0.woff') format('woff'), url('../fonts/2B12E1_0_0.ttf') format('truetype'), url('../fonts/2B12E1_0_0.svg#wf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* OnePage-Scroll Overrides
+------------------------------------*/
+.onepage-pagination {
+    top: 0;
+}
+.onepage-pagination li a:before {
+    background: #f5f5f5;
+}
+.onepage-pagination li a.active:before {
+    border: 1px solid #f5f5f5;
+}
+
+
+/* Global Stuff
+------------------------------------*/
+p {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #FFFFFF;
+}
+
+/* Section #1
+------------------------------------*/
+.hp-section-one {
+    background: #958260 url('../images/logo.png') no-repeat bottom right;
+    background-size: contain;
+}
+.hp-section-one h1 img {
+    max-width: 100%;
+}
+.hp-section-one h2 {
+    color: #FFFFFF;
+}
+
+/* Section #2
+------------------------------------*/
+.hp-section-two {
+    background: #382D2B;
+}
+.hp-section-two h2 {
+    color: #89744F;
+}
+.hp-section-two .hp-features {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hp-section-two [class*="hp-feature-"] {
+    text-align: center;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+}
+.hp-section-two [class*="hp-feature-"] h3 {
+    color: #87754E;
+    font-weight: bold;
+}
+.hp-section-two [class*="hp-feature-"] p {
+    font-size: 12px;
+}
+
+/* Section #3
+------------------------------------*/
+.hp-section-three {
+    background: #54575A
+}
+.hp-section-three h2 {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+/* Section #4
+------------------------------------*/
+.hp-section-four {
+    background: #31b4e7;
+    padding-top: 0;
+}
+.hp-section-four h2 {
+    color:#FFFFFF;
+    font-size: 10px;
+    letter-spacing: -2px;
+}
+.hp-section-four h3 {
+    color: #FFFFFF;
+}
+.hp-section-four .hp-columns {
+    margin: 0;
+}
+.hp-section-four [class*="hp-column-"] {
+    margin: 0;
+}
+.hp-section-four [class*="hp-column-"] .hp-constraint {
+    max-width: 325px;
+}
+.hp-section-four .hp-column-one {
+    background: #008066;
+}
+
+.hp-section-four .hp-column-two {
+    background: #006680;
+}
+.hp-section-four .hp-column-three {
+    background: #ED028C;
+}
+
+/* Custom Button
+------------------------------------*/
+.hp-button {
+    background-color: #98d56e;
+    box-shadow: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: 2px dotted #FFFFFF;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease
+}
+
+.hp-button:active, .hp-button:hover {
+    box-shadow: none;
+    background-color: #88bf62;
+    color: #FFFFFF;
+}
+
+/* Utlity Classes
+------------------------------------*/
+.hp-heading {
+    font-family: 'Found', Georgia, Times, "Times New Roman", serif;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.hp-lowercase {
+    text-transform: lowercase;
+}
+.hp-uppercase {
+    text-transform: uppercase;
+}
+.hp-constraint {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
