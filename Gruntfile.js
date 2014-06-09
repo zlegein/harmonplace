@@ -207,7 +207,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= config.app %>/images',
-                    src: '{,*/}*.{gif,jpeg,jpg,png}',
+                    src: '*.png',
                     dest: '<%= config.dist %>/images/'
                 }]
             }
@@ -289,8 +289,8 @@ module.exports = function (grunt) {
                 }, {
                     expand: true,
                     dot: true,
-                    cwd: '<%= config.app %>/components/font-awesome',
-                    src: ['fonts/*.*'],
+                    cwd: '<%= config.app %>',
+                    src: ['images/*.*'],
                     dest: '<%= config.dist %>'
                 }]
             },
@@ -322,8 +322,8 @@ module.exports = function (grunt) {
             dist: [
                 'copy:styles',
                 'copy:fonts',
-                'imagemin',
-                'svgmin'
+//                'imagemin',
+//                'svgmin'
             ]
         }
     });
