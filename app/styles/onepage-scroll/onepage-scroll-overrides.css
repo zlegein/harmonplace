@@ -1,0 +1,11 @@
+/* OnePage-Scroll Overrides
+------------------------------------*/
+.onepage-pagination {
+    top: 20px;
+}
+.onepage-pagination li a:before {
+    background: #f5f5f5;
+}
+.onepage-pagination li a.active:before {
+    border: 1px solid #f5f5f5;
+}

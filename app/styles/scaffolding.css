@@ -1,0 +1,97 @@
+/* Global Stuff
+------------------------------------*/
+html {
+    background: #958260;
+}
+p {
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.hp-select {
+    margin-bottom: 10px;
+}
+.main {
+    /*overflow-x: hidden;*/
+    /*overflow-y: visible;*/
+}
+
+
+/* Custom Button
+------------------------------------*/
+.hp-button {
+    background-color: #98d56e;
+    box-shadow: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: 2px dotted #FFFFFF;
+}
+
+.hp-button:active, .hp-button:hover {
+    box-shadow: none;
+    background-color: #88bf62;
+    color: #FFFFFF;
+}
+
+/* Utlity Classes
+------------------------------------*/
+.hp-heading {
+    font-family: 'Found', Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    text-transform: lowercase;
+    color: #89744F;
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-size: 26px;
+    letter-spacing: -2px;
+}
+.hp-lowercase {
+    text-transform: lowercase;
+}
+.hp-uppercase {
+    text-transform: uppercase;
+}
+.hp-constraint {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    p {
+        font-size: 26px;
+        line-height: 1.25;
+        margin-bottom: 30px;
+    }
+    .hp-heading {
+        font-size: 98px;
+        letter-spacing: -6px;
+        margin-bottom: 30px
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
