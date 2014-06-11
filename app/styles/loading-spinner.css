@@ -1,0 +1,53 @@
+/* For initial page load
+------------------------------------*/
+body.loading {
+    background: #958260;
+    position: fixed;
+    top: 30%;
+    left: 42%;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    -webkit-animation: rotation .6s infinite linear;
+    animation: rotation .6s infinite linear;
+    border-left: 6px solid rgba(56,46,42,.5);
+    border-right: 6px solid rgba(56,46,42,.5);
+    border-bottom: 6px solid rgba(56,46,42,.5);
+    border-top: 6px solid #958260;
+    border-radius:100%;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(359deg);}
+}
+
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}
+
+section, ul {
+    opacity: 0;
+    -webkit-transition:opacity .6s;
+    transition: opacity .6s;
+}
+
+body.loaded ul,
+body.loaded section {
+    opacity: 1;
+}
+
+@media only screen and (min-width : 768px) {
+    body.loading {
+        left: 46%;
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+    body.loading {
+        left: 49%;
+    }
+
+}
+

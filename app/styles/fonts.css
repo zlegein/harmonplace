@@ -1,0 +1,9 @@
+/* Fancy Fonts
+------------------------------------*/
+@font-face {
+    font-family: 'Found';
+    src: url('../fonts/2B12E1_0_0.eot');
+    src: url('../fonts/2B12E1_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2B12E1_0_0.woff') format('woff'), url('../fonts/2B12E1_0_0.ttf') format('truetype'), url('../fonts/2B12E1_0_0.svg#wf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

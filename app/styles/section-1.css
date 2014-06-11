@@ -1,0 +1,80 @@
+/* Mobile First */
+.hp-section-one {
+    background: #958260 url('../images/logo.png') no-repeat bottom right;
+    background-size: 60px;
+}
+.hp-section-one h1 img {
+    max-width: 90%;
+}
+.hp-section-one h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .hp-section-one {
+        background-size: 200px;
+        padding-top: 12.5%;
+    }
+    .hp-section-one h1 {
+        font-size: 48px;
+        margin-bottom: 48px
+    }
+    .hp-section-one h2 {
+        font-size: 28px;
+        margin-bottom: 28px;
+        font-weight: bold;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .hp-section-one {
+        background-size: 300px;
+    }
+    .hp-section-one  .hp-constraint {
+        margin-left: 2%;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .hp-section-one {
+        background-size: contain;
+    }
+    .hp-section-one  .hp-constraint {
+        margin-left: 5%;
+    }
+}
+
+/* Custom X-Large Devices, Wide Screens */
+@media only screen
+and (min-width : 1440px) {
+    /* Styles */
+    .hp-section-one  .hp-constraint {
+        margin-left: 15%;
+    }
+}
+
+/* Custom XXX-Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    /* Styles */
+    .hp-section-one  .hp-constraint {
+        margin-left: 25%;
+    }
+
+}
