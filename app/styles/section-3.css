@@ -2,6 +2,9 @@
 .hp-section-three {
     background: #54575A
 }
+.hp-section-three h2 span {
+    color: #89744F;
+}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {

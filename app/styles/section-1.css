@@ -1,10 +1,11 @@
 /* Mobile First */
 .hp-section-one {
-    background: #958260 url('../images/logo.png') no-repeat bottom right;
+    background: #958260 url('../images/logo.png') no-repeat top right;
     background-size: 60px;
 }
 .hp-section-one h1 img {
     max-width: 90%;
+    padding-right:25px;
 }
 .hp-section-one h2 {
     color: #FFFFFF;
