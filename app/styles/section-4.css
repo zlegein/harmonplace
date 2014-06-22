@@ -7,6 +7,9 @@
     font-size: 16px;
     font-weight: 500;
 }
+.hp-section-four p span {
+    font-size: 0.7em;
+}
 .hp-section-four form {
     margin-bottom: 10px;
 }
